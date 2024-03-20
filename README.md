@@ -1,11 +1,11 @@
-# pairnet
+# PairNet
 
 PNL
 
 ## Installation
 
 ```bash
-$ pip install git+https://github.com/FannLab/pairnet.git
+$ pip install git+https://github.com/FannLab/PairNet.git
 ```
 
 ## Usage
@@ -15,20 +15,20 @@ In the repo, there are a few points to note:
 
 First, make sure that your device has CUDA properly installed, as this package utilizes CUDA.
 
-You need to import the pairnet package using the following statement:
+You need to import the PairNet package using the following statement:
 
 ```
-import pairnet
+import PairNet
 ```
 
-In the pairnet package, there are two available functions: `pairnet.pairnet.train` and `pairnet.PairNetClassifier.PairNetClassifier`. The `PairNetClassifier` is the model of PairNet, intended for users familiar with deep learning.
+In the PairNet package, there are two available functions: `PairNet.PairNet.train` and `PairNet.PairNetClassifier.PairNetClassifier`. The `PairNetClassifier` is the model of PairNet, intended for users familiar with deep learning.
 
 The `train` function is used to execute the complete training process and ultimately generate the ROC (Receiver Operating Characteristic) curves.
 
 Here is an introduction to the parameters of the `train` function:
 
 ```
-PairNet.pairnet.train(train_z, train_p, val_z, val_p, test_z, test_p,OUT_DIR,SEED=None,EPOCHS = 20,MODEL_DIR = None,log_file = None)
+PairNet.PairNet.train(train_z, train_p, val_z, val_p, test_z, test_p,OUT_DIR,SEED=None,EPOCHS = 20,MODEL_DIR = None,log_file = None)
 ```
 
 `train_z, val_z, test_z`: Type: numpy.ndarray; Z matrix. It should be split into three sets: train, test, and validation.
@@ -89,11 +89,11 @@ PairNet.train_val_test.train(x_train,y_train,x_val,y_val,x_test,y_test,'out/test
 
 ## License
 
-`pairnet` was created by syuepu. It is licensed under the terms of the MIT license.
+`PairNet` was created by syuepu. It is licensed under the terms of the MIT license.
 
 ## Credits
 
-`pairnet` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`PairNet` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
 
 
 ### Citation
