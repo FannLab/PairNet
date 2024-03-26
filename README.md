@@ -1,6 +1,6 @@
 # PNL
 
-Algorithm used to build polygenic risk score in PNL method.
+PairNet algorithm used to build polygenic risk score in PNL method.
 
 ## Installation
 
