@@ -84,7 +84,7 @@ y_test = sample_all.PHENO.iloc[test_sample_idx].values - 1
 
 import PairNet
 
-PairNet.train_val_test.train(x_train,y_train,x_val,y_val,x_test,y_test,'out/test')
+PairNet.PairNet.train(x_train,y_train,x_val,y_val,x_test,y_test,OUT_DIR = 'out/test',MODEL_DIR = 'out/model/')
 ```
 
 ## License
